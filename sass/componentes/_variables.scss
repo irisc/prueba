@@ -1,0 +1,40 @@
+// Colores corporativos
+// ----------------------------------------------------------------
+
+$institucional: #00b4c5;
+$entretenimiento: #007c85;
+$internet: #f2c108;
+$sms: #f287b7;
+$musica: #d0186b;
+$empresas: #0057a8;
+$multimedia: #7b3d76;
+$black: #030018;
+$llamadas: #5a461b;
+
+// Colores
+// ----------------------------------------------------------------
+
+$fondobloques:#eee;
+$bordebloques:#bababa;
+
+
+// Tipografia
+// ----------------------------------------------------------------
+$baseFontFamily: Tahoma, sans-serif !default;
+$baseColor: #4a4a4a;
+$headings1FontFamily: Platform-regular, Helvetica, sans-serif;
+$headings2FontFamily: Platform-medium, Helvetica, sans-serif;
+$headings3FontFamily: Platform-bold, Helvetica, sans-serif;
+
+// Mixin Background Color rgba
+// ----------------------------------------------------------------
+
+$fondobloques:#eee;
+$bordebloques:#bababa;
+
+@mixin bgcolorRgba($rgba1, $rgba2, $rgba3, $opacity){
+	background-color: ($rgba1, $rgba2, $rgba3);
+	background-color: ($rgba1, $rgba2, $rgba3, $opacity);
+}
+
+

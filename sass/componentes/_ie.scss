@@ -1,0 +1,111 @@
+
+/*--------- Estilos IE8 ---------*/
+
+.ch-ie8 {
+	aside.ch-user-drop{
+	display:none;
+	}
+	.ch-nav-footer ul li{
+		width: 15%;
+	}
+	
+	.ch-box-login input[type=text], .ch-box-login .ch-user-content .ch-password input.ch-password{
+		padding-top: 6px;
+	}	
+	.ch-user-box a.ch-genera{
+		padding-top: 8px !important;
+	}
+
+}
+
+/*--------- Estilos IE9 ---------*/
+.ch-ie9{
+	.ch-user-box a.ch-genera{
+		padding-top: 9px !important;
+	}
+
+}
+
+/*--------- Landing IE7 ---------*/
+
+.ch-ie7-container{
+	width:620px;
+	padding:30px;
+	margin: 40px auto;
+	border: solid 1px #CCC;
+	font-size: 18px;
+
+	.ch-warning{
+		background: url(../img/ie7.warning.png) 0 0 no-repeat;
+		padding: 0 0 0 100px;
+		height: 85px;
+	}
+
+	.ch-p1, .ch-p2, .ch-p3{
+		margin:0;
+		padding: 0;
+	}
+
+	.ch-p1{
+		font-size: 32px;
+		color:$institucional;
+	}
+
+	.ch-p2{	
+		color:#999;
+	}
+
+	.ch-p3{
+		width: 100%;
+		text-align: center;
+		background:#030018;
+		color: #FFF;		
+		padding: 8px 0;
+		margin-bottom: 10px;
+	}
+	
+	ul{
+		border-bottom: 1px solid #ccc;
+		width: 100%;
+		overflow: hidden;
+		padding-bottom:20px;
+		li{
+			height: 100px;
+			float:left;
+			margin: 0 22px;
+			a{
+				background: url(../img/browsers.png) no-repeat 0 0;
+				width: 75px;
+				display: block;
+				padding-top: 80px;
+				text-align: center;
+				text-decoration: none;
+				font-size: 12px;
+				color:#999;
+				&.ch-btn_chrome{
+					background-position: 5px 0;
+				}
+				&.ch-btn_firefox{
+					background-position: -100px 0;
+				}
+				&.ch-btn_opera{
+					background-position: -207px 0;
+				}
+				&.ch-btn_safari{
+					background-position: -310px 0;
+				}
+				&.ch-btn_ie{
+					background-position: -420px 0;
+				}
+				&:hover{
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+	.ch-logo{
+		background: url(../img/logo-ie.png) right top no-repeat;
+		height:34px;
+		margin-top: 15px;
+	}
+}

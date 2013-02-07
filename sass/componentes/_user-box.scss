@@ -1,0 +1,335 @@
+.ch-user-box{
+}
+.ch-user-drop{
+	@include box-sizing(border-box);
+    @include panel-pattern;
+	right: 10px;
+	top:100px;	
+	border-top:3px solid $musica;
+	z-index: 4;
+	width:190px;
+	@media screen and (min-width: 970px){
+		top:155px;
+		right:auto;
+		margin-left: 760px;
+		display: none;
+	}
+}
+
+.ch-user-fixed{
+	@include box-sizing(border-box);
+	min-height:320px;
+	border:1px solid rgba(232, 232, 232, 1);
+	background-color: #fafafa;
+	display: block;
+}
+
+h1.ch-login-heading{
+	display:block;
+	background-color: #f2f2f2;
+	font-family:$baseFontFamily;
+	font-size: 15px;
+	text-align: center;
+	font-weight: 700;
+	color: #0091a6;
+	padding: 8px 5px;
+	border-bottom: 1px solid rgb(232, 232, 232);
+	text-shadow: 1px 1px 1px rgba(255, 255, 255, 1);
+	@media screen and (max-width: 969px){
+		display:none;		
+	}
+}
+.ch-user-content{
+	padding:0 6px 25px 6px;
+}
+
+.ch-cellphone{
+	margin: 15px 0;
+
+	label{
+		&.ch-data-lbl{
+			display:block;
+			font-size:13px;
+			margin-bottom:4px;
+		}
+
+		&.ch-prefix{
+			font-size:12px;
+			color:#888;
+			vertical-align:middle;
+		}
+
+		&.ch-line-number{
+			@extend .ch-prefix !optional;
+			margin-left:0.9%;
+		}
+	}
+
+	input{
+		height: 27px;
+		font-size: 11px;
+		padding-top: 2px;
+		border:1px solid #c0c0c0;
+		padding-left:3px;
+		outline: none;
+		@include box-sizing(border-box);
+		@include border-radius(3px);
+		@include box-shadow(0 1px 2px #dfdfdf inset);
+
+		&.ch-prefix{
+			width:35px;
+			@media only screen and (max-device-width : 1300px){
+				width: 20%;
+			}				
+		}
+
+		&.ch-placeholder{
+			color:#a2a2a2;
+		}
+
+		&.ch-line-number{
+			width:106px;
+
+			@media only screen and (max-device-width : 1300px){
+				width: 60%;
+			}
+		}
+	}
+}
+
+.ch-password{
+	margin-bottom: 5px;
+
+	span{
+		position: relative;
+		display: inline-block;
+
+		@media only screen and (max-device-width : 1300px){
+			width: 91%;
+		}
+	}
+
+	label.ch-data-lbl{
+		display:inline-block;
+		font-size:13px;
+		margin-bottom:4px;
+	}
+
+	input.ch-password{
+		width:176px;
+		height: 27px;
+		border:1px solid #c0c0c0;
+		padding-left: 3px;
+		padding-top: 2px;
+		outline: none;
+		@include box-shadow(0 1px 2px #dfdfdf inset);
+		@include box-sizing(border-box);
+		@include border-radius(3px);
+
+		@media only screen and (max-device-width : 1300px){
+			width: 100%;
+		}
+	}
+
+	a.ch-keyboard-btn{
+		background: url(../img/ico-teclado.png) no-repeat;
+		width: 23px;
+		height: 16px;
+		border:none;
+		position: absolute;
+		top:6px;
+		right: 5px;
+		cursor:pointer;
+
+		@media only screen and (max-device-width : 1300px){
+			right: -4px;
+		}
+
+		&:hover{
+			background-image: url(../img/ico-tecladoh.png);
+		}
+
+		&:active{
+			top:7px;
+		}
+	}
+}
+
+.ch-pass-not{
+	margin-bottom: 20px;
+
+	a{
+		text-decoration: underline;
+		color: $institucional;
+		margin-left: 2px;
+
+		&:hover{
+			text-decoration: none;
+		}
+	}
+}
+
+
+.ch-go{
+	margin-bottom:15px;
+
+	input.ch-btn-go{
+		width: 100%;
+		height: 30px;
+		float:right;
+		font-size:14px;
+		color:#fff;
+		border:1px solid #009ca7;
+		background-color: #00b4c5;
+		background-image: -moz-linear-gradient(top, #17bac9, #009ca8);
+		background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#17bac9), to(#009ca8));
+		background-image: -webkit-linear-gradient(top, #17bac9, #009ca8);
+		background-image: -o-linear-gradient(top, #17bac9, #009ca8);
+		background-image: linear-gradient(to bottom, #17bac9, #009ca8);
+		background-repeat: repeat-x;
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#17bac9', endColorstr='#009ca8', GradientType=0);
+		text-shadow: -1px -1px 1px rgba(0, 124, 142, 1);
+		@include border-radius(2px);
+		@include box-sizing(border-box);
+
+
+
+		&:hover{
+			background-color: #0193a0;
+			background-image: -moz-linear-gradient(top, #14b2c0, #0193a0);
+			background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#14b2c0), to(#0193a0));
+			background-image: -webkit-linear-gradient(top, #14b2c0, #0193a0);
+			background-image: -o-linear-gradient(top, #14b2c0, #0193a0);
+			background-image: linear-gradient(to bottom, #14b2c0, #0193a0);
+			background-repeat: repeat-x;
+			filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#14b2c0', endColorstr='#0193a0', GradientType=0);
+		}
+
+		&:active{
+			background-color: #007693;
+			padding-top:3px;
+			@include box-shadow(1px 3px 5px rgba(0, 0, 0, 0.15) inset, -1px 0px 5px rgba(0, 0, 0, 0.15) inset);
+		}
+	}
+}
+.ch-new-password{
+	border-top:1px solid #d7d7d7;
+	margin:0 7px;
+	padding: 22px 0;
+
+	p.ch-first-time{
+		margin: 0 0 10px 0;
+		text-align:center;
+		font-size: 12px;
+	}
+	
+	a{
+		display:block;
+		text-align:center;
+		background-color: $musica;
+		width:100%;
+		height: 32px;
+		padding:6px;
+		font-family:$headings1FontFamily;
+		font-size:13px;
+		color:#fff;
+		@include box-sizing(border-box);
+		@include border-radius(3px);
+
+		&:hover{
+			background-color: #ed3383;
+		}
+
+		&:active{
+			padding-top:7px;
+		}
+	}
+}
+
+
+.ch-keyboard-triang{
+	width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 8px solid #9E9E9E;
+    margin: 0 0 0 67px;	
+}
+.ch-keyboard-box{
+	position: absolute;
+	width: 90px;
+	margin: 0 0 0 86px;	
+	.ch-keyboard-area{
+		background: #9E9E9E;
+		padding:5px;	
+		@include border-radius(2px);
+	}
+	input.ch-keys{
+		width: 20px;
+		height: 20px;
+		margin: 2px;
+		@include background-image(linear-gradient(top, #FFF, #DDD));
+		@include box-shadow(rgba(96, 96, 96, 1) 0 1px 0); 
+		@include border-radius(2px);
+		@include text-shadow(rgba(255, 255, 255, 1) 0 1px 0);
+		border:0;
+		font-size: 1em;
+		text-align: center;
+		font-weight: bold;
+		color:#606060;
+		&:hover{
+			@include background-image(linear-gradient(top, #DBDBDB, #C7C7C7));
+		}
+		&:active{
+			@include background-image(linear-gradient(top, #D6D6D6, #C2C2C2));
+		}
+		&.ch-nan{
+			width: 47px;
+		}
+	}
+}
+/*User data*/
+
+.ch-user-block{
+	border-bottom: 1px solid #E8E8E8;
+	padding:15px 0;
+}
+.ch-user-name{
+	font-weight: bold;
+	color:#797979;
+	background: url(../img/ico-user-name.png) 0 0 no-repeat;
+	padding-left:18px;
+	margin:5px auto;
+}
+.ch-user-number{
+	font-weight: bold;
+	color:#0091A5;
+	background: url(../img/ico-user-number.png) 0 0 no-repeat;
+	padding-left:18px;
+	margin:5px auto;
+}
+.ch-user-links{
+	overflow: hidden;
+}
+.ch-my-profile{
+	color:#0091A5;
+	padding-left: 18px;	
+	background: url(../img/ico-my-profile.png) 0 0 no-repeat;
+	text-decoration: underline;
+	margin:5px auto;
+	float:left;
+	&:hover{
+		text-decoration:none;
+	}
+}
+.ch-close-session{
+	color:#D8186B;
+	padding-left: 18px;	
+	background: url(../img/ico-close-session.png) 0 0 no-repeat;
+	text-decoration: underline;
+	margin:5px auto;
+	float:right;
+	&:hover{
+		text-decoration:none;
+	}
+}

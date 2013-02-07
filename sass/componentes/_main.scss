@@ -1,0 +1,50 @@
+.ch-main{
+	width:100%;
+
+	@media only screen and (max-width : 969px){
+		width:100% !important;
+		float:left !important;
+	}
+
+	.ch-head-page{
+		width: 100%;
+		min-height: 49px;
+		float: left;
+
+		.ch-btn-user-hide{
+			height: 41px;
+			padding-top: 8px;
+
+			@media only screen and (max-width:969px){
+				display: none;
+			}
+			@include btn-ingresar;
+		}
+	}
+
+	.ch-content-page-log{
+		width: 100%;
+		float: left;
+		overflow:hidden;
+		@include box-sizing(border-box);
+
+		/*--- Para resoluciones hasta 969px ---*/
+		@media only screen and (max-width:969px){
+			border:none;
+			margin-top:-11px;
+		}
+
+		.ch-core-content{
+			width:100%;
+			min-height: 403px;
+			padding:10px;
+			@include box-sizing(border-box);
+
+			@include content-title;
+
+			@media only screen and (max-width:969px){
+				margin-top: 10px;
+			}
+		}
+	}
+}
